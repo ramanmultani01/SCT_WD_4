@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #cbace5);
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.app {
+  background: #fff;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+form input, form textarea, form input[type="datetime-local"], form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+form button {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #0056b3;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.filters button {
+  padding: 8px 15px;
+  border: none;
+  background: #6c757d;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.filters button:hover {
+  background: #495057;
+}
+ul {
+  list-style: none;
+}
+.task {
+  background: #f8f9fa;
+  padding: 15px;
+  border-left: 6px solid #007bff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.task:hover {
+  transform: scale(1.01);
+}
+.task.completed {
+  background: #d4edda;
+  border-left-color: #28a745;
+  text-decoration: line-through;
+}
+.task strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+.task small {
+  color: #888;
+  display: block;
+  margin-top: 4px;
+}
+.task-actions {
+  margin-top: 10px;
+}
+.task-actions button {
+  margin-right: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.complete {
+  background: #28a745;
+}
+.complete:hover {
+  background: #218838;
+}
+.delete {
+  background: #dc3545;
+}
+.delete:hover {
+  background: #bd2130;
+}
+.edit {
+  background: #17a2b8;
+}
+.edit:hover {
+  background: #117a8b;
+}
